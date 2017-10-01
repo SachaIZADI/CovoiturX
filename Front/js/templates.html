@@ -1,0 +1,1482 @@
+<!-- Template de la page d'accueil toute première page -->
+
+<div id="tpl-accueil1">
+    <style>body  {
+    background-image: url("img/combi.png");
+    background-color: white;
+    }</style>
+    <img src="img/logo.png" width="300" height="300" class ="displayed"/>
+    <br>
+    <div>
+        <p>
+        <a href="#Login">
+            <button type="button" class="btn btn-primary btn-lg outline btn-block">
+                <h4>Connexion</h4>
+            </button>
+        </a>
+        </p>
+    </div>
+    <br/><br/>
+    <div>
+        <p>
+        <a href="#Inscription">
+            <button type="button" class="btn btn-primary btn-lg outline btn-block buttonBottom">
+                <h4>Pas encore inscrit ?</h4>
+            </button>
+        </a>
+        </p>
+    </div>
+</div>
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+<!-- Template du formulaire du login -->
+
+<div id="tpl-login">
+    <style>body  {
+        background-image: url("img/combi.png");
+        background-color: white;
+    }</style>
+    <div id="body">
+        <p>
+        <a class="btn btn-sm btn-primary" href="#Frankiz" role="button">
+            <span class="glyphicon glyphicon-chevron-left"/>Back
+        </a>
+        </p>
+        <h2 class="Titre"> Connexion </h2>
+        <div class="col-sm-6">
+            <div class="input-group date">
+                <input type="text" class="form-control" id="login" placeholder="login"/>
+            </div>
+            <br/>
+            <div class="input-group date">
+                <input type="password" class="form-control" id="password" placeholder="password"/>
+            </div>
+        </div>
+        <br/>
+        <div>
+            <p>
+            <a href="#Connexion">
+            <button type="button" class="btn btn-primary btn-lg outline btn-block" onClick="login()">
+                <h4>Connexion</h4>
+            </button>
+            </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+
+
+
+<!-- Template de la bare de navigation (haut et bas) à intégrer aux templates des autres pages dans index.js -->
+
+<div id="tpl-nav">
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo_NavBar_High.jpg" width="133,3" height="40"/>
+                    </a>
+                </div>
+                    
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#monProfil">
+                            <span class="glyphicon glyphicon-user" style="color:black"/>
+                        </a>
+
+                        <a class="navbar-right msg" href="#Messages">
+                            <span class="glyphicon glyphicon-envelope" style="color:black"/>
+                            <span class="badge badge-notify">!</span>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+
+
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container fluid">
+                
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#Demander">
+                            <span class="glyphicon glyphicon-thumbs-up" style="color:black"/>
+                        </a>
+    
+                        <a class="navbar-center" href="#Annonces">
+                            <span class="glyphicon glyphicon-road" style="color:black"/>
+                            <span class="badge badge-notify">?</span>
+                        </a>
+                
+                        <a class="navbar-right" href="#Proposer">
+                            <span class="glyphicon glyphicon-plus-sign" style="color:black"/>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+
+
+<!-- Template de la page d'accueil -->
+
+<div id="tpl-home">
+    <style>body  {
+        background-image: url("img/combi.png");
+        background-color: white;
+    }</style>
+    <div id="body">
+        <div id="tpl-nav">
+            <div>
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="container fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">
+                                <img src="img/logo_NavBar_High.jpg" width="133,3" height="40"/>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <h2>
+                                <a class="navbar-left" href="#monProfil">
+                                    <span class="glyphicon glyphicon-user" style="color:black"/>
+                                </a>
+                                
+                                <a class="navbar-right msg" href="#Messages">
+                                    <span class="glyphicon glyphicon-envelope" style="color:black"/>
+                                    <span class="badge badge-notify">!</span>
+                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+            
+            
+            <div>
+                <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+                    <div class="container fluid">
+                        
+                        <div>
+                            <h2>
+                                <a class="navbar-left" href="#Demander">
+                                    <span class="glyphicon glyphicon-thumbs-up" style="color:black"/>
+                                </a>
+                                
+                                <a class="navbar-center" href="#Annonces">
+                                    <span class="glyphicon glyphicon-road" style="color:black"/>
+                                    <span class="badge badge-notify">?</span>
+                                </a>
+                                
+                                <a class="navbar-right" href="#Proposer">
+                                    <span class="glyphicon glyphicon-plus-sign" style="color:black"/>
+                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div>
+            <p>
+            <a href="#Demandes">
+                <button type="button" class="btn btn-primary btn-lg outline btn-block demande">
+                    <h4>Les demandes en cours<span class="badge-info">?</span></h4>
+                </button>
+            </a>
+            </p>
+        </div>
+
+        <div>
+            <p>
+            <a href="#Covoits">
+                <button type="button" class="btn btn-primary btn-lg outline btn-block proposition">
+                    <h4>Les covoiturages en cours<span class="badge-info">?</span>
+                    </h4>
+                </button>
+            </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+<!-- Template du formulaire de profil -->
+
+<div id="tpl-form-monProfil">
+    <style>body  {
+        background-color: #e6e6e6;
+    }</style>
+    <div style="background-image: url(img/combi.png)" >
+        <br><br><br>
+        <p>
+        <a class="btn btn-sm btn-primary" href="#Frankiz" role="button">
+            <span class="glyphicon glyphicon-chevron-left"/>Back
+        </a>
+        </p>
+        <h2 class="Titre" style ="font-weight: bold">Créez votre profil</h2>
+        <div class="Titre">
+            <div id="myForm" >
+                
+                <label class="form_col" for="lastName">Nom :</label>
+                <input name="lastName" class="form-control" id="lastName" type="text" />
+                <span  id="tooltip_lastName"></span>
+                <br /><br />
+                
+                <label class="form_col" for="firstName">Prénom :</label>
+                <input name="firstName"  class="form-control" id="firstName" type="text" />
+                
+                <span id="tooltip_firstName"></span>
+                <br /><br />
+                
+                <label class="form_col" for="firstName">Promotion :</label>
+                <input name="firstName"  class="form-control" id="promotion" type="text" />
+                <span id="tooltip_promotion"></span>
+                <br /><br />
+                
+                <label class="form_col" for="firstName">Section :</label>
+                <input name="firstName"  class="form-control" id="section" type="text" />
+                <span id="tooltip_section"></span>
+                <br /><br />
+                
+                <label class="form_col" for="firstName">Telephone :</label>
+                <input name="firstName"  class="form-control" id="telephone" type="text" />
+                <span id="tooltip_telephone"></span>
+                <br /><br />
+                
+                
+                <label class="form_col" for="pwd1">Mot de passe :</label>
+                <input name="pwd1" id="pwd1" class="form-control" type="password" />
+                <span id="tooltip_pwd1"></span>
+                
+                <br /><br />
+                
+                <label class="form_col" for="pwd2">Confirmation :</label>
+                <input name="pwd2" id="pwd2" class="form-control" type="password" />
+                <span id="tooltip_pwd2"></span>
+                <br /><br />
+                
+                <button class="btn btn-primary btn-lg outline btn-block propositionButton" id="button_soummettre" onClick="alert('Vous ne pouvez pas encore créer de profil. On y travaille (promis!)')"> Creer le profil</button>
+                <br /><br />
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/checkProfil.js"></script>
+    
+</div>
+
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+
+
+<!-- Template du formulaire de demande -->
+
+<div id="tpl-demander">
+    <style>body  {
+        background-image: url("img/road.png");
+        background-color: white;
+        background-repeat:repeat;
+    }</style>
+    <div id="body">
+        
+        <h2 class="Titre"> Demander un trajet</h2>
+        <div class="col-sm-6">
+            <div class="input-group date">
+                <input type="text" class="form-control" id="d_depart" placeholder="Lieu de départ"/><span onClick="LocaliserDepart()" class="input-group-addon"><i  class="glyphicon glyphicon-map-marker" style="color:blue;"></i></span>
+            </div><br/>
+            <div class="input-group date">
+                <input type="text" class="form-control" id="d_arrivee" placeholder="Lieu d'arrivée"/><span onClick="LocaliserArrivee()" class="input-group-addon"><i  class="glyphicon glyphicon-map-marker" style="color:blue;"></i></span><span onclick="echangeLieu()" class="input-group-addon"><i  class="glyphicon glyphicon-random" style="color:blue;"></i></span>
+
+            </div>
+            <br/>
+            <div class="input-group date">
+                <input placeholder="Date" class="form-control" type="text" onfocus="(this.type = 'date')" onblur="(this.type = 'text')" id="d_date"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                    </div>
+            <br/>
+            <div class="input-group date">
+                <input placeholder="Horaire de depart" class="form-control" type="text" onfocus="(this.type = 'time')" onblur="(this.type = 'text')" id="d_horaire"/><span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+            </div>
+            <br/>
+        </div>
+        <br/>
+        <div>
+            <p>
+            <button type="button" onClick="checkInputDataDemander()" class="btn btn-primary btn-lg outline btn-block propositionButton">
+                <h4>Poster une demande</h4>
+            </button>
+            <div id="d_message_erreur_saisie" style="text-align: center;"></div><div id="d_check_message"></div>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+
+
+<!-- Template du formulaire de proposition -->
+
+<div id="tpl-proposer">
+    <style>body  {
+        background-image: url("img/road.png");
+        background-color: white;
+        background-size : 100%;
+    } </style>
+    
+    <div id="body">
+        <h2 class="Titre"> Proposer un trajet</h2>
+        <div class="col-sm-6">
+            <!-- Il faudra utiliser google maps pour géolocaliser la position -->
+            <div class="input-group date">
+                <input type="text" class="form-control" id="d_depart" placeholder="Lieu de départ"/><span onClick="LocaliserDepart()" class="input-group-addon"><i  class="glyphicon glyphicon-map-marker" style="color:blue;"></i>
+                    </div> <br/>
+            <div id="#potentiel_message_erreur"></div>
+            <div class="input-group date">
+                <input type="text" class="form-control" id="d_arrivee" placeholder="Lieu d'arrivée"/><span onClick="LocaliserArrivee()" class="input-group-addon"><i  class="glyphicon glyphicon-map-marker" style="color:blue;"></i></span><span onclick="echangeLieu()" class="input-group-addon"><i  class="glyphicon glyphicon-random" style="color:blue;"></i></span>
+                
+            </div><br/>
+            <div class="input-group date">
+                <input placeholder="Date" class="form-control" type="text" onfocus="(this.type = 'date')" onblur="(this.type = 'text')" id="date"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                    </div>
+            <br/>
+            <div class="input-group date">
+                <input placeholder="Horaire de depart" class="form-control" type="text" onfocus="(this.type = 'time')" onblur="(this.type = 'text')" id="horaire"/><span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+            </div>
+            <br/>
+            <input type="number" class="form-control" id="nombre_place" placeholder="Nombre de places disponibles"/>
+            <br/>
+            <input type="text" class="form-control" id="comment" style="height:80px;" placeholder="Ajouter un commentaire. Ex: Trajet=PALC."/>
+            <br/>
+        </div>
+        
+        <div>
+            <p>
+            <button type="button" onClick="proposer()" class="btn btn-primary btn-lg outline btn-block propositionButton">
+                <h4>Poster une proposition</h4>
+            </button>
+            <div id="message_erreur_saisie"></div><div id="check_message"></div>
+            </p>
+            
+        </div>
+        <br><br><br><br>
+    </div>
+</div>
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+
+
+<!-- Template de  mon profil -->
+<!-- JSON à renvoyer :
+ {"id_membre":"1", "nom":"machin", "prenom":"truc", "promo":"X15", "section":"pêche à la ligne", "num_tel":"0601010101", "photo":"img/PhotoProfil.jpg" } -->
+
+
+<div id="tpl-monProfil"><div id="tpl-nav"><div><nav class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container fluid"><div class="navbar-header"><a class="navbar-brand" href="#"><img src="img/logo_NavBar_High.jpg" width="133,3" height="40"/></a></div><div><h2><a class="navbar-left" href="#monProfil"><span class="glyphicon glyphicon-user" style="color:black"/></a><a class="navbar-right msg" href="#Messages"><span class="glyphicon glyphicon-envelope" style="color:black"/><span class="badge badge-notify">!</span></a></h2></div></div></nav></div><div><nav class="navbar navbar-default navbar-fixed-bottom" role="navigation"><div class="container fluid"><div><h2><a class="navbar-left" href="#Demander"><span class="glyphicon glyphicon-thumbs-up" style="color:black"/></a><a class="navbar-center" href="#Annonces"><span class="glyphicon glyphicon-road" style="color:black"/><span class="badge badge-notify">?</span></a><a class="navbar-right" href="#Proposer"><span class="glyphicon glyphicon-plus-sign" style="color:black"/></a></h2></div></div></nav></div></div>
+
+    <style>body  {
+        background-color: #e6e6e6;
+    }</style>
+    <br><br><br>
+    {{#.}}
+    <div style="background-image: url(img/combi.png)">
+        <h2 class="Titre" style ="font-weight: bold"> {{prenom}} {{nom}}</h2>
+        <div position="center">
+            <img src="{{photo}}" width="300" height="300" class ="roundedImage"/>
+        </div>
+        <br/>
+    </div>
+    
+    <br/>
+    
+    <div style="background-image: url(img/roadBis.png)">
+        <div class="Titre">
+            <br/>
+            <span class="entree">Promo :</span>
+            <br/>{{promo}}<br/>
+            <span class="entree">Section :</span>
+            <br/>{{section}}<br/>
+            <span class="entree">Téléphone :</span>
+            <br/>{{num_tel}}<br/>
+            <br/><br/>
+        </div>
+    </div>
+    {{/.}}
+    
+    <br/>
+    
+    <div style="background-image: url(img/route.png)">
+        <br/>
+        <div class="Titre">
+        <div>
+            <span style="color:#007299"> Vous prévenir des nouvelles propositions :</span>
+            <input type="checkbox" id="notify_me_prop" checked/>
+            <script>$(notify_me_prop).bootstrapSwitch();</script>
+        </div>
+        <br/>
+        <div>
+            <span style="color:#007299"> Vous prévenir des nouvelles demandes :</span>
+            <input type="checkbox" id="notify_me_dem" checked/>
+            <script>$(notify_me_dem).bootstrapSwitch();</script>
+        </div>
+        </div>
+        <br/>
+    </div>
+    
+    
+    <br><br>
+    
+    <div>
+    <p>
+       <button type="button" class="btn btn-primary btn-lg outline btn-block propositionButton" onClick="logout()" >
+            <a href="#Frankiz" color="black">
+                <h3><span class="glyphicon glyphicon-off"/> Déconnexion</h3>
+            </a>
+        </button>
+    </p>
+    </div>
+    
+    <br><br><br>
+    
+</div>
+
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+
+
+
+<!-- Template du profil d'un autre utilisateur -->
+<!-- JSON à renvoyer :
+ {"id_membre":"1", "nom":"machin", "prenom":"truc", "promo":"X15", "section":"pêche à la ligne", "num_tel":"0601010101", "photo":"img/PhotoProfil.jpg" } -->
+
+<div id="tpl-profil">
+    <style>body  {
+        background-color: #e6e6e6;
+    }</style>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo_NavBar_High.jpg" width="133,3" height="40"/>
+                    </a>
+                </div>
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#monProfil">
+                            <span class="glyphicon glyphicon-user" style="color:black"/>
+                        </a>
+                        
+                        <a class="navbar-right msg" href="#Messages">
+                            <span class="glyphicon glyphicon-envelope" style="color:black"/>
+                            <span class="badge badge-notify">!</span>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container fluid">
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#Demander">
+                            <span class="glyphicon glyphicon-thumbs-up" style="color:black"/>
+                        </a>
+                        <a class="navbar-center" href="#Annonces">
+                            <span class="glyphicon glyphicon-road" style="color:black"/>
+                            <span class="badge badge-notify">?</span>
+                        </a>
+                        <a class="navbar-right" href="#Proposer">
+                            <span class="glyphicon glyphicon-plus-sign" style="color:black"/>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <br><br><br><br>
+    <p>
+        <a class="btn btn-sm btn-primary" onclick="window.history.back()" role="button">
+            <span class="glyphicon glyphicon-chevron-left"/>Back
+        </a>
+    </p>
+    {{#.}}
+    <div style="background-image: url(img/combi.png)">
+        <h2 class="Titre" style ="font-weight: bold">{{prenom}} {{nom}}</h2>
+        <div position="center">
+            <img src="{{photo}}" width="300" height="300" class ="roundedImage"/>
+        </div>
+        <br/>
+    </div>
+    
+    <br/>
+    
+    <div style="background-image: url(img/roadBis.png)">
+        <div class="Titre">
+            </br>
+            <span class="entree">Promo :</span>
+            <br/>{{promo}}<br/>
+            <span class="entree">Section :</span>
+            <br/>{{section}}<br/>
+            <span class="entree">Téléphone :</span>
+            <br/>{{num_tel}}<br/><br/>
+            <div>
+                <p>
+                <button type="button" class="btn btn-primary btn-lg outline btn-block propositionButton">
+                    <a href ="sms:{{num_tel}}" color="black">
+                        <h3><span class="glyphicon glyphicon-comment"/> Envoyer un SMS</h3>
+                    </a>
+                </button>
+                </p>
+            </div>
+
+            <br/>
+        </div>
+    </div>
+    {{/.}}
+    <br/><br/><br/><br/>
+    
+</div>
+
+
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+
+
+<!-- Template des annonces en cours -->
+<!-- JSON à renvoyer :
+ {"vos_propositions":[{"id_covoit":"1", "date":"11-09-16", "heure":"17:00", "lieu_depart":"Paris", "lieu_arrivee":"X" }],
+ "covoit_rejoints":[{"id_covoit":"1", "date":"11-09-16", "heure":"17:00", "lieu_depart":"Paris", "lieu_arrivee":"X" }],
+ "autres_covoit":[{"id_covoit":"1", "date":"11-09-16", "heure":"17:00", "lieu_depart":"Paris", "lieu_arrivee":"X" }]} -->
+<!-- Le lien vers la page suivante se fait via sessionStorage['idCovoit']-->
+
+
+<div id="tpl-covoitEnCours">
+    <style> body {
+        background-image: url("img/road_grande_taille.png");
+        background-color: white;
+        background-repeat:repeat-y;
+        background-size : 100%;
+    } </style>
+    
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo_NavBar_High.jpg" width="133,3" height="40"/>
+                    </a>
+                </div>
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#monProfil">
+                            <span class="glyphicon glyphicon-user" style="color:black"/>
+                        </a>
+                        
+                        <a class="navbar-right msg" href="#Messages">
+                            <span class="glyphicon glyphicon-envelope" style="color:black"/>
+                            <span class="badge badge-notify">!</span>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container fluid">
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#Demander">
+                            <span class="glyphicon glyphicon-thumbs-up" style="color:black"/>
+                        </a>
+                        <a class="navbar-center" href="#Annonces">
+                            <span class="glyphicon glyphicon-road" style="color:black"/>
+                            <span class="badge badge-notify">?</span>
+                        </a>
+                        <a class="navbar-right" href="#Proposer">
+                            <span class="glyphicon glyphicon-plus-sign" style="color:black"/>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    
+    <br><br><br><br>
+    <h2 class="Titre">Les covoiturages en cours</h2>
+    <br>
+    <div class="list-group">
+        <span class="list-group-item active">
+            <h4>Vos propositions</h4>
+        </span>
+        {{#vos_propositions}}
+        <a class="list-group-item" href="#VosPropositions" onclick="sessionStorage['idCovoit']='{{id_covoit}}'">
+            <span class="list-group-item-heading">
+                <h4>{{date}} - {{heure}} : {{lieu_depart}} <span class="glyphicon glyphicon-arrow-right"/> {{lieu_arrivee}} </h4>
+            </span>
+        </a>
+        {{/vos_propositions}}
+    </div>
+    
+    <br>
+    
+    <div class="list-group">
+        <span class="list-group-item active">
+            <h4>Les covoiturages que vous avez rejoints</h4>
+        </span>
+        {{#covoit_rejoints}}
+        <a class="list-group-item" href="#CovoitRejoint" onclick="sessionStorage['idCovoit']='{{id_covoit}}'">
+            <span class="list-group-item-heading">
+                <h4>{{date}} - {{heure}} : {{lieu_depart}} <span class="glyphicon glyphicon-arrow-right"/> {{lieu_arrivee}}</h4>
+            </span>
+        </a>
+        {{/covoit_rejoints}}
+    </div>
+    
+    <br>
+    
+    <div class="list-group">
+        <span class="list-group-item active">
+            <h4>Les propositions des autres utilisateurs</h4>
+        </span>
+        {{#autres_covoit}}
+        <a class="list-group-item" href="#AutreProposition" onclick="sessionStorage['idCovoit']={{id_covoit}}">
+            <span class="list-group-item-heading">
+                <h4>{{date}} - {{heure}} : {{lieu_depart}} <span class="glyphicon glyphicon-arrow-right"/> {{lieu_arrivee}}</h4>
+            </span>
+        </a>
+        {{/autres_covoit}}
+    </div>
+    
+    <br><br><br>
+    
+</div>
+
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+
+
+<!-- Template de vos propositions -->
+<!-- JSON à renvoyer :
+ {"infos":[{"date":"11-09-16", "heure":"17:00", "lieu_depart":"Paris", "lieu_arrivee":"X", "commentaire" : "PALC attendue"}],
+ "passagers":[{"id_membre":"1", "nom":"Truc", "prenom":"machin", "photo":"img/PhotoProfil.jpg"}]} -->
+<!-- Le lien vers la page de discussion se fait via sessionStorage['idCovoit'] qui a été enregistrée précédemment -->
+<!-- Le lien vers les profils des utilisateurs se fait via sessionStorage['idProfil'] -->
+
+
+<div id="tpl-VosPropositions">
+    <style>body  {
+        background-image: url("img/road_grande_taille.png");
+        background-color: white;
+        background-repeat:repeat-y;
+        background-size : 100%;
+    } </style>
+    
+    
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo_NavBar_High.jpg" width="133,3" height="40"/>
+                    </a>
+                </div>
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#Profil">
+                            <span class="glyphicon glyphicon-user" style="color:black"/>
+                        </a>
+                        
+                        <a class="navbar-right msg" href="#Messages">
+                            <span class="glyphicon glyphicon-envelope" style="color:black"/>
+                            <span class="badge badge-notify">!</span>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container fluid">
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#Demander">
+                            <span class="glyphicon glyphicon-thumbs-up" style="color:black"/>
+                        </a>
+                        <a class="navbar-center" href="#Annonces">
+                            <span class="glyphicon glyphicon-road" style="color:black"/>
+                            <span class="badge badge-notify">?</span>
+                        </a>
+                        <a class="navbar-right" href="#Proposer">
+                            <span class="glyphicon glyphicon-plus-sign" style="color:black"/>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    
+    <br><br><br><br>
+    <p>
+        <a class="btn btn-sm btn-primary" onclick="window.history.back()" role="button">
+            <span class="glyphicon glyphicon-chevron-left"/>Back
+        </a>
+    </p>
+    
+    {{#infos}}
+    <div class = "Titre" style="background-color: #d9d9d9">
+        <h3 class="display-3">{{lieu_depart}} <span class="glyphicon glyphicon-arrow-right"/> {{lieu_arrivee}}</h3>
+        <h4 class="display-3">{{date}} à {{heure}}</h4>
+    </div>
+    <br/>
+    
+    <div class = "Titre" style="background-color: #e6e6e6">
+        <span class="entree">Commentaire : </span>
+        <br/>{{commentaire}}
+        <br/>
+    </div>
+    {{/infos}}
+    
+    <br/><br/>
+    
+    
+    <div style="background-color: #e6e6e6">
+        <div class = "Titre">
+            <span class="entree">Passagers : </span>
+            <br/>
+        </div>
+        {{#passagers}}
+        <div class = "decaleDroite">
+            <div position="left">
+                <a href="#Profil" onclick="sessionStorage['idProfil']='{{id_membre}}'">
+                    <img src="{{photo}}" class ="roundedImageSmall"/>
+                </a>
+                <span>{{prenom}} {{nom}}</span>
+            </div>
+            <br/>
+        </div>
+        {{/passagers}}
+        <br/>
+    </div>
+    
+    
+    <br/><br/>
+    
+    
+    <div>
+        <p>
+        <button type="button" class="btn btn-primary btn-lg outline btn-block propositionButton">
+            <a href="#Messages" color="black">
+                <h3><span class="glyphicon glyphicon-comment"/> Discussion</h3>
+            </a>
+        </button>
+        </p>
+    </div>
+    <br/><br/><br/><br/>
+</div>
+
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+
+
+<!-- Template des covoiturages que vous avez rejoints -->
+<!-- JSON à renvoyer :
+ {"infos":[{"id":"1", "date":"11-09-16", "heure":"17:00", "lieu_depart":"Paris", "lieu_arrivee":"X", "commentaire" : "PALC attendue"}], 
+ "conducteur":[{"id_membre":"1", "nom":"Truc", "prenom":"machin", "photo":"img/PhotoProfil.jpg"}],
+ "passagers":[{"id_membre":"1", "nom":"Truc", "prenom":"machin", "photo":"img/PhotoProfil.jpg"}]} -->
+<!-- Le lien vers la page de discussion se fait via sessionStorage['idCovoit'] qui a été enregistrée précédemment -->
+<!-- Le lien vers les profils des utilisateurs se fait via sessionStorage['idProfil'] -->
+<!-- Il faut distinguer le cas des autres utilisateurs de celui de L'Utilisateur -->
+
+
+<div id="tpl-CovoitRejoint">
+    <style>body  {
+        background-image: url("img/road_grande_taille.png");
+        background-color: white;
+        background-repeat:repeat-y;
+        background-size : 100%;
+    } </style>
+    
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo_NavBar_High.jpg" width="133,3" height="40"/>
+                    </a>
+                </div>
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#monProfil">
+                            <span class="glyphicon glyphicon-user" style="color:black"/>
+                        </a>
+                        
+                        <a class="navbar-right msg" href="#Messages">
+                            <span class="glyphicon glyphicon-envelope" style="color:black"/>
+                            <span class="badge badge-notify">!</span>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container fluid">
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#Demander">
+                            <span class="glyphicon glyphicon-thumbs-up" style="color:black"/>
+                        </a>
+                        <a class="navbar-center" href="#Annonces">
+                            <span class="glyphicon glyphicon-road" style="color:black"/>
+                            <span class="badge badge-notify">?</span>
+                        </a>
+                        <a class="navbar-right" href="#Proposer">
+                            <span class="glyphicon glyphicon-plus-sign" style="color:black"/>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <br><br><br><br>
+    <p>
+    <a class="btn btn-sm btn-primary" onclick="window.history.back()" role="button">
+        <span class="glyphicon glyphicon-chevron-left"/>Back
+    </a>
+    </p>
+    
+    {{#infos}}
+    <div class = "Titre" style="background-color: #d9d9d9">
+        <h3 class="display-3">{{lieu_depart}} <span class="glyphicon glyphicon-arrow-right"/> {{lieu_arrivee}}</h3>
+        <h4 class="display-3">{{date}} à {{heure}}</h4>
+    </div>
+    <br/>
+    
+    <div class = "Titre" style="background-color:#e6e6e6">
+        <span class="entree">Commentaire : </span>
+        <br/>{{commentaire}}
+        <br/>
+    </div>
+    {{/infos}}
+    
+    <br/><br/>
+    
+    <div style="background-color : #e6e6e6">
+        <div class = "Titre">
+            <span class="entree">Conducteur : </span>
+            <br/>
+        </div>
+        <div class = "decaleDroite">
+            {{#conducteur}}
+            <div position="left">
+                <a href="#Profil">
+                    <img src="{{photo}}" class ="roundedImageSmall" onclick="sessionStorage['idProfil']='{{id_membre}}"/>
+                </a>
+                <span>{{prenom}} {{nom}}</span>
+            </div>
+            <br/>
+            {{/conducteur}}
+        </div>
+        <br/>
+    </div>
+    
+    <br/><br/>
+    
+    <div style="background-color : #e6e6e6">
+        <div class = "Titre">
+            <span class="entree">Passagers : </span>
+            <br/>
+        </div>
+        <div class = "decaleDroite">
+            <div position="left">
+                <a href="#monProfil">
+                    <img src="img/PhotoProfil.jpg" class ="roundedImageSmall"/>
+                </a>
+                <span>Moi</span>
+                <a class="btn btn-sm btn-danger" href="#" onclick="quitterCovoit();alert('Vous venez de quitter ce covoiturage')" role="button">
+                    Quitter
+                </a>
+            </div>
+            <br/>
+            {{#passagers}}
+            <div position="left">
+                <a href="#Profil">
+                    <img src="{{photo}}" class ="roundedImageSmall" onclick="sessionStorage['idProfil']='{{id_membre}}"/>
+                </a>
+                <span>{{prenom}} {{nom}}</span>
+            </div>
+            <br/>
+            {{/passagers}}
+        </div>
+        <br/>
+    </div>
+    
+
+    <br/><br/>
+    
+    
+    <div>
+        <p>
+        <button type="button" class="btn btn-primary btn-lg outline btn-block propositionButton">
+            <a href="#Messages" color="black">
+                <h3><span class="glyphicon glyphicon-comment"/> Discussion</h3>
+            </a>
+        </button>
+        </p>
+    </div>
+    <br/><br/><br/><br/>
+</div>
+
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+
+<!-- Template des autres propositions -->
+<!-- JSON à renvoyer :
+ {"infos":[{"id":"1", "date":"11-09-16", "heure":"17:00", "lieu_depart":"Paris", "lieu_arrivee":"X"}],
+ "passagers":[{"id_profil":"1", "nom":"Truc", "prenom":"machin", "url_image":"img/PhotoProfil.jpg"}],
+ "demandeurs":[{"id_profil":"1", "nom":"Truc", "prenom":"machin", "url_image":"img/PhotoProfil.jpg"}]} -->
+<!-- Le lien vers les profils des utilisateurs se fait via sessionStorage['idProfil'] -->
+
+
+<div id="tpl-AutreProposition">
+    <style>body  {
+        background-image: url("img/road_grande_taille.png");
+        background-color: white;
+        background-repeat:repeat-y;
+        background-size : 100%;
+    } </style>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo_NavBar_High.jpg" width="133,3" height="40"/>
+                    </a>
+                </div>
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#monProfil">
+                            <span class="glyphicon glyphicon-user" style="color:black"/>
+                        </a>
+                        
+                        <a class="navbar-right msg" href="#Messages">
+                            <span class="glyphicon glyphicon-envelope" style="color:black"/>
+                            <span class="badge badge-notify">!</span>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container fluid">
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#Demander">
+                            <span class="glyphicon glyphicon-thumbs-up" style="color:black"/>
+                        </a>
+                        <a class="navbar-center" href="#Annonces">
+                            <span class="glyphicon glyphicon-road" style="color:black"/>
+                            <span class="badge badge-notify">?</span>
+                        </a>
+                        <a class="navbar-right" href="#Proposer">
+                            <span class="glyphicon glyphicon-plus-sign" style="color:black"/>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <br><br><br><br>
+    <p>
+    <a class="btn btn-sm btn-primary" onclick="window.history.back()" role="button">
+        <span class="glyphicon glyphicon-chevron-left"/>Back
+    </a>
+    </p>
+    
+    {{#infos}}
+    <div class = "Titre" style="background-color: #d9d9d9">
+        <h3 class="display-3">{{lieu_depart}} <span class="glyphicon glyphicon-arrow-right"/> {{lieu_arrivee}}</h3>
+        <h4 class="display-3">{{date}} à {{heure}}</h4>
+    </div>
+    <br/>
+    
+    <div class = "Titre" style="background-color:#e6e6e6">
+        <span class="entree">Commentaire : </span>
+        <br/>{{commentaire}}
+        <br/>
+    </div>
+    {{/infos}}
+    
+    <br/><br/>
+    
+    <div style="background-color : #e6e6e6">
+        <div class = "Titre">
+            <span class="entree">Conducteur : </span>
+            <br/>
+        </div>
+        
+        {{#conducteur}}
+        <div class = "decaleDroite">
+            <div position="left">
+                <a href="#Profil">
+                    <img src="{{photo}}" class="roundedImageSmall" onclick="sessionStorage['idProfil']='{{id_membre}}"/>
+                </a>
+                <span>{{prenom}} {{nom}}</span>
+            </div>
+            <br/>
+        </div>
+        {{/conducteur}}
+        <br/>
+    </div>
+
+    <br/><br/>
+
+    <div style="background-color : #e6e6e6">
+        <div class = "Titre">
+            <span class="entree">Passagers : </span>
+            <br/>
+        </div>
+        
+        {{#passagers}}
+        <div class = "decaleDroite">
+            <div position="left">
+                <a href="#Profil">
+                    <img src="{{photo}}" class="roundedImageSmall" onclick="sessionStorage['idProfil']='{{id_membre}}"/>
+                </a>
+                <span>{{prenom}} {{nom}}</span>
+            </div>
+            <br/>
+        </div>
+        {{/passagers}}
+        <br/>
+    </div>
+    
+    
+    <br/><br/>
+    
+    
+    <div>
+        <p>
+        <button type="button" class="btn btn-primary btn-lg outline btn-block propositionButton" onclick="rejoindreCovoit()">
+            <!--N'affiche pas l'alerte-->
+                <h3>Rejoindre</h3>
+        </button>
+        </p>
+    </div>
+    <br/><br/><br/><br/>
+</div>
+
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+
+<!-- Template des demandes en cours -->
+<!-- JSON à renvoyer :
+ {"vos_demandes":[{"id_covoit":"1", "date":"11-09-16", "heure":"17:00", "lieu_depart":"Paris", "lieu_arrivee":"X" }],
+ "autres_demandes":[{"id_covoit":"1", "date":"11-09-16", "heure":"17:00", "lieu_depart":"Paris", "lieu_arrivee":"X" }]} -->
+<!-- Le lien vers la page suivante se fait via sessionStorage['idDemande']-->
+
+
+<div id="tpl-demandesEnCours">
+    <style>body  {
+        background-image: url("img/road_grande_taille.png");
+        background-color: white;
+        background-repeat:repeat-y;
+        background-size : 100%;
+    } </style>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo_NavBar_High.jpg" width="133,3" height="40"/>
+                    </a>
+                </div>
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#monProfil">
+                            <span class="glyphicon glyphicon-user" style="color:black"/>
+                        </a>
+                        
+                        <a class="navbar-right msg" href="#Messages">
+                            <span class="glyphicon glyphicon-envelope" style="color:black"/>
+                            <span class="badge badge-notify">!</span>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container fluid">
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#Demander">
+                            <span class="glyphicon glyphicon-thumbs-up" style="color:black"/>
+                        </a>
+                        <a class="navbar-center" href="#Annonces">
+                            <span class="glyphicon glyphicon-road" style="color:black"/>
+                            <span class="badge badge-notify">?</span>
+                        </a>
+                        <a class="navbar-right" href="#Proposer">
+                            <span class="glyphicon glyphicon-plus-sign" style="color:black"/>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <br><br><br><br>
+    <h2 class="Titre">Les demandes en cours</h2>
+    <br>
+    <div class="list-group">
+        <span class="list-group-item active">
+            <h4>Vos demandes</h4>
+        </span>
+        {{#vos_demandes}}
+        <a class="list-group-item" href="#VosDemandes" onclick="sessionStorage['idDemande']='{{id_covoit}}'">
+            <span class="list-group-item-heading">
+                <h4>{{date}} - {{heure}} : {{lieu_depart}} <span class="glyphicon glyphicon-arrow-right"/> {{lieu_arrivee}} </h4>
+            </span>
+        </a>
+        {{/vos_demandes}}
+    </div>
+    
+    <br>
+    
+    <div class="list-group">
+        <span class="list-group-item active">
+            <h4>Les demandes des autres utilisateurs</h4>
+        </span>
+        {{#autres_demandes}}
+        <a class="list-group-item" href="#AutresDemandes" onclick="sessionStorage['idDemande']='{{id_covoit}}'">
+            <span class="list-group-item-heading">
+                <h4>{{date}} - {{heure}} : {{lieu_depart}} <span class="glyphicon glyphicon-arrow-right"/> {{lieu_arrivee}} </h4>
+            </span>
+        </a>
+        {{/autres_demandes}}
+    </div>
+    
+    <br><br><br><br>
+    
+</div>
+
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+
+
+<!-- Template de vos demandes -->
+<!-- JSON à renvoyer :
+ {"infos":[{"id":"1", "date":"11-09-16", "heure":"17:00", "lieu_depart":"Paris", "lieu_arrivee":"X"}],
+ "demandeurs":[{"id_profil":"1", "nom":"Truc", "prenom":"machin", "url_image":"img/PhotoProfil.jpg"}]} -->
+<!-- Le lien vers les profils des utilisateurs se fait via sessionStorage['idProfil'] -->
+
+<div id="tpl-VosDemandes">
+    <style>body  {
+        background-image: url("img/road_grande_taille.png");
+        background-color: white;
+        background-repeat:repeat-y;
+        background-size : 100%;
+    } </style>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo_NavBar_High.jpg" width="133,3" height="40"/>
+                    </a>
+                </div>
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#monProfil">
+                            <span class="glyphicon glyphicon-user" style="color:black"/>
+                        </a>
+                        
+                        <a class="navbar-right msg" href="#Messages">
+                            <span class="glyphicon glyphicon-envelope" style="color:black"/>
+                            <span class="badge badge-notify">!</span>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container fluid">
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#Demander">
+                            <span class="glyphicon glyphicon-thumbs-up" style="color:black"/>
+                        </a>
+                        <a class="navbar-center" href="#Annonces">
+                            <span class="glyphicon glyphicon-road" style="color:black"/>
+                            <span class="badge badge-notify">?</span>
+                        </a>
+                        <a class="navbar-right" href="#Proposer">
+                            <span class="glyphicon glyphicon-plus-sign" style="color:black"/>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <br><br><br><br>
+    <p>
+    <a class="btn btn-sm btn-primary" onclick="window.history.back()" role="button">
+        <span class="glyphicon glyphicon-chevron-left"/>Back
+    </a>
+    </p>
+    {{#infos}}
+    <div class = "Titre" style="background-color: #d9d9d9">
+        <h3 class="display-3">{{lieu_depart}} <span class="glyphicon glyphicon-arrow-right"/> {{lieu_arrivee}}</h3>
+        <h4 class="display-3">{{date}} à {{heure}}</h4>
+    </div>
+    <br/>
+    {{/infos}}
+    
+    <div class = "Titre" style="background-color:#e6e6e6">
+        <span class="entree">Statut : </span>
+        <br/>
+        <h4>Pas encore de réponse</h4>
+        <span>Vous serez averti dès que votre demande est acceptée</span>
+        <br/>
+    </div>
+    
+    <br/><br/>
+    
+    <div style="background-color : #e6e6e6">
+        <div class = "Titre">
+            <span class="entree">Ils ont rejoint votre demande : </span>
+            <br/>
+        </div>
+        <div class = "decaleDroite">
+            <div position="left">
+                <a href="#monProfil">
+                    <img src="img/PhotoProfil.jpg" class ="roundedImageSmall"/>
+                </a>
+                <span>Moi</span>
+                <a class="btn btn-sm btn-danger" href="#" onclick="quitterDemande();alert('Vous venez de quitter cette demande')" role="button">
+                    Quitter
+                </a>
+            </div>
+            <br/>
+            {{#demandeurs}}
+            <div position="left">
+                <a href="#Profil">
+                    <img src="{{photo}}" class ="roundedImageSmall" onclick ="sessionStorage['idProfil']='{{id_membre}}'"/>
+                </a>
+                <span>{{prenom}} {{nom}}</span>
+            </div>
+            <br/>
+            {{/demandeurs}}
+        </div>
+        <br/>
+    </div>
+    <br/><br/><br/><br/>
+</div>
+
+
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+<!-- *****************************************************************************************************-->
+
+
+<!-- Template de demandes des autres utilisateurs -->
+<!-- JSON à renvoyer :
+ {"infos":[{"id":"1", "date":"11-09-16", "heure":"17:00", "lieu_depart":"Paris", "lieu_arrivee":"X"}],
+ "demandeurs":[{"id_profil":"1", "nom":"Truc", "prenom":"machin", "url_image":"img/PhotoProfil.jpg"}]} -->
+<!-- Le lien vers les profils des utilisateurs se fait via sessionStorage['idProfil'] -->
+
+
+<div id="tpl-AutresDemandes">
+    <style>body  {
+        background-image: url("img/road_grande_taille.png");
+        background-color: white;
+        background-repeat:repeat-y;
+        background-size : 100%;
+    } </style>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo_NavBar_High.jpg" width="133,3" height="40"/>
+                    </a>
+                </div>
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#monProfil">
+                            <span class="glyphicon glyphicon-user" style="color:black"/>
+                        </a>
+                        
+                        <a class="navbar-right msg" href="#Messages">
+                            <span class="glyphicon glyphicon-envelope" style="color:black"/>
+                            <span class="badge badge-notify">!</span>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container fluid">
+                <div>
+                    <h2>
+                        <a class="navbar-left" href="#Demander">
+                            <span class="glyphicon glyphicon-thumbs-up" style="color:black"/>
+                        </a>
+                        <a class="navbar-center" href="#Annonces">
+                            <span class="glyphicon glyphicon-road" style="color:black"/>
+                            <span class="badge badge-notify">?</span>
+                        </a>
+                        <a class="navbar-right" href="#Proposer">
+                            <span class="glyphicon glyphicon-plus-sign" style="color:black"/>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <br><br><br><br>
+    <p>
+    <a class="btn btn-sm btn-primary" onclick="window.history.back()" role="button">
+        <span class="glyphicon glyphicon-chevron-left"/>Back
+    </a>
+    </p>
+    
+    {{#infos}}
+    <div class = "Titre" style="background-color: #d9d9d9">
+        <h3 class="display-3">{{lieu_depart}} <span class="glyphicon glyphicon-arrow-right"/> {{lieu_arrivee}}</h3>
+        <h4 class="display-3">{{date}} à {{heure}}</h4>
+    </div>
+    <br/>
+    {{/infos}}
+    
+    <div class = "Titre" style="background-color:#e6e6e6">
+        <span class="entree">Statut : </span>
+        <br/>
+        <h4>Pas encore de réponse</h4>
+        <br/>
+    </div>
+    
+    <br/><br/>
+    
+    <div style="background-color : #e6e6e6">
+        <div class = "Titre">
+            <span class="entree">Ils ont rejoint cette demande : </span>
+            <br/>
+        </div>
+        <div class = "decaleDroite">
+            {{#demandeurs}}
+            <div position="left">
+                <a href="#Profil">
+                    <img src="{{photo}}" class ="roundedImageSmall" onclick ="sessionStorage['idProfil']='{{id_membre}}'"/>
+                </a>
+                <span>{{prenom}} {{nom}}</span>
+            </div>
+            <br/>
+            {{/demandeurs}}
+        </div>
+        <br/>
+    </div>
+    
+    <br/><br/>
+    
+    <div>
+        <p>
+        <button type="button" class="btn btn-primary btn-lg outline btn-block propositionButton">
+            <a href="#" color="black" onclick="rejoindreDemande()"> <!-- N'affiche pas l'alert-->
+                <h3>Rejoindre la demande</h3>
+            </a>
+        </button>
+        </p>
+    </div>
+    <br/>
+    <div>
+        <p>
+        <button type="button" class="btn btn-primary btn-lg outline btn-block propositionButton">
+            <a href="#" color="black" onclick="accepterDemande(), alert('Vous avez accepté cette demande. Merci.')">
+                <h3>Accepter la demande</h3>
+            </a>
+        </button>
+        </p>
+    </div>
+    <br/><br/><br/><br/>
+</div>
+
+

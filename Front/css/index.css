@@ -1,0 +1,163 @@
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+
+.navbar-center {
+    transform: translateX(-50%);
+    left: 55%;
+    position: absolute;
+}
+
+
+.navbar-right {
+    right: 5%;
+    position: fixed;
+}
+
+.h2{
+    display:inline;
+}
+
+.a{
+    color : black ;
+}
+
+#body {
+    padding-top: 60px;
+}
+
+.demande{
+    margin-top: 90px;
+}
+
+.proposition{
+    margin-top: 160px;
+}
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+
+.btn-primary.outline {
+    border: 2px solid #007299;
+    color: #007299;
+}
+
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #007299;
+    border-color: #007299;
+}
+
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #0099cc;
+    color: #0099cc;
+    box-shadow: none;
+}
+
+.badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    left: -20px;
+}
+
+.badge-info {
+    background-color: red;
+    color : white;
+    border-radius: 40%;
+    font-size : 25px;
+    padding:1px 10px;
+    position: relative;
+    right:-30px;
+}
+
+.msg {
+    position: absolute;
+    right:-5px;
+}
+
+.propositionButton{
+    position: relative;
+    bottom : 10px;
+}
+
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 50px;
+}
+
+.buttonBottom{
+    position : absolute;
+    top : 80%;
+}
+
+.Titre{
+    text-align : center;
+}
+
+.roundedImage{
+    overflow:hidden;
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    border-radius:100px;
+    width:150px;
+    height:150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.entree{
+    font-style: bold;
+    font-size: 18px;
+    color : #007299;
+}
+
+
+.fondProfil{
+    margin: 5px;
+    background-color: #b3d7ff;
+    border-radius : 5px;
+}
+
+.roundedImageSmall{
+    overflow:hidden;
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    border-radius:30px;
+    width:50px;
+    height:50px;
+}
+
+.decaleDroite{
+    margin-left: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
